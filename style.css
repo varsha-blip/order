@@ -1,0 +1,228 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variables */
+:root{
+    --navbar-height: 59px; 
+    /* not used */
+}
+
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Gloock', serif;
+    font-family: 'Noto Serif', serif;
+    position: sticky;
+    top: 0;
+}
+/* navigation bar: logo and image  */
+#logo{
+    margin: 4px 13px;
+}
+#logo img{
+    height: 50px;
+    margin: 1px 29px;
+}
+/* navigation bar: list styling  */
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li{
+    /* color: aliceblue; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 18px 200px;
+    /* padding: 2% 15% ; */
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    font-family: 'Gloock', serif;
+    font-family: 'Noto Serif', serif;
+}
+#home::before{
+    content: "";
+    /* background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover; */
+    background: url('images/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* height: 74.5%; */
+    height: 594px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: rgb(163 41 153);
+    text-align: center;
+}
+#home p{
+    color: rgb(14, 14, 31);
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* services */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid blueviolet;
+    padding: 12px 44px;
+    margin: 2px 6px;
+    border-radius: 23px;
+    background: #e6dc92;
+    margin-bottom: 20px;
+}
+#services .box img{
+    display: block;
+    height: 160px;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Gloock', serif;
+    font-family: 'Noto Serif', serif;
+}
+#services .box:hover{
+    transform: scale(1.1);
+}
+
+/* client section  */
+#client-section{
+    position: relative;
+    /* height: 344px; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url('images/bg3.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+}
+#clients .client-item{
+   padding: 32px ;
+}
+
+/* contact section  */
+#contact{
+    position:relative;
+    border: 2px solid ;
+    border-radius: 23px;
+    background-color: transparent;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("images/bg3.jpg") no-repeat center center/cover;
+    /* background-color: rgb(254, 144, 0); */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid;
+    border-radius: 10px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Gloock', serif;
+    font-family: 'Noto Serif', serif;
+}
+
+/* footer  */
+footer{
+    background-color: black;
+    color: white;
+    padding: 8px 0px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Gloock', serif;
+    font-family: 'Noto Serif', serif;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Gloock', serif;
+    font-family: 'Noto Serif', serif;
+}
+.btn{
+    padding: 5px 19px;
+    margin: 32px;
+    border: 2px solid #ff0707;
+    background-color: #020202;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-family: 'Gloock', serif;
+    font-family: 'Noto Serif', serif;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #da1313;
+    color: rgb(5, 5, 5);
+}
+.center{
+    text-align: center;
+}
